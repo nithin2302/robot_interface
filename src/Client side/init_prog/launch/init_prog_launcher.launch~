@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="init_prog" type="start_roscore" name="start_roscore" output="screen"/>
+	<node pkg="init_prog" type="interface" name="interface" output="screen" launch-prefix="gnome-terminal --command"/>
+
+</launch>

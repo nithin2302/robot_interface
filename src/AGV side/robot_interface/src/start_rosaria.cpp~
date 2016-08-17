@@ -1,0 +1,13 @@
+#include <ros/ros.h>
+#include <iostream>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main (int argc, char **argv)
+{
+
+	char a;
+	a = system("rosrun rosaria RosAria _port:=/dev/ttyS0 &");	
+	return 0;
+}

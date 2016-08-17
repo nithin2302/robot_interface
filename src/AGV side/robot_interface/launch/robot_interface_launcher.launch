@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="robot_interface" type="interface" name="Interface" output="screen" />	
+</launch>

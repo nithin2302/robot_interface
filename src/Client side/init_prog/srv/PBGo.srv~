@@ -1,0 +1,3 @@
+string goal_name
+---
+bool PB_reached

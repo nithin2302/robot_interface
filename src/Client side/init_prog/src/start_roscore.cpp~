@@ -1,0 +1,19 @@
+#include "ros/master.h"
+#include <ros/ros.h>
+
+int main(int argc, char **argv)
+{
+ 	if(!ros::master::check())
+	{
+ 		//std::system("roscore");	
+ 		ROS_INFO_STREAM("roscore started! Your current system is the Master");
+	}
+
+	else 
+	{ 	
+		std::cout<< " Master is currently running on the network with the ID : ";
+		std::cout<<ros::master::getURI()<<std::endl;
+	}
+
+  return 0;
+}

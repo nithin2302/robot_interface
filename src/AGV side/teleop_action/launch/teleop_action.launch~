@@ -1,0 +1,5 @@
+<launch>
+  <node name="TeleOp_Server" pkg="teleop_action" type="TeleOp_Server" output="screen" launch-prefix="gnome-terminal --command"/>
+  <node name="TeleOp_Client" pkg="teleop_action" type="TeleOp_Client" output="screen" launch-prefix="gnome-terminal --command"/>
+  <node name="TeleOpKeyRead" pkg="teleop_action" type="TeleOpKeyRead" output="screen"launch-prefix="gnome-terminal --command"/>
+</launch>

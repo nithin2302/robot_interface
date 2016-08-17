@@ -1,0 +1,14 @@
+#include "ros/master.h"
+#include <ros/ros.h>
+
+int main(int argc, char **argv)
+{
+	if(ros::master::check==true)
+		std::cout<<"Masteris already running with the ID : " << ros::master::getURI()<<std::endl;
+	else 
+		//std::system("export ROS_MASTER_URI="ros::master::getURI());  		
+		{std::system("roscore");	
+  		ROS_INFO_STREAM("roscore started! Your current system is the Master");}
+
+	return 0;
+}

@@ -1,0 +1,11 @@
+#goal definition
+int32 samples
+---
+#result definition
+int32 Quit
+---
+#feedback
+int32 direction
+##bool motor_state
+##float32 state_of_charge
+int32 Quit
